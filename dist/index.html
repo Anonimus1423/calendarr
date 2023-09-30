@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!-- Document Head Starts -->
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/site_icon/favicon.png">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Главная</title>
+</head>
+	<!-- Document Head Ends -->
+
+	<body>
+		<!-- Main Site Content Starts -->
+		<main>
+			<section class="calendar">
+				<div class="calendar__container">
+					<div class="calendar__inputs" onclick="showCalendars()">
+						<div class="calendar__first-input calendar__input">
+							<p>От</p>
+							<input id="date-input-1" disabled type="text">
+							<img src="img/calendar.png" alt="calendar">
+						</div>
+						<div class="calendar__last-input calendar__input">
+							<p>До</p>
+							<input id="date-input-2" disabled type="text">
+							<img src="img/calendar.png" alt="calendar">
+						</div>
+					</div>	
+					<div class="calendars" id="calendars">
+						<div class="calendar-m calendar-1">
+							<div class="year">
+								<img onclick="prevYear('year', 1)" src="img/down-arrow.png" alt="down arrow">
+								<p onclick="toggleSelector('year-selector', 'year-selector-img')">
+									<span id="year">2022</span> 
+									<img id="year-selector-img" src="img/down-arrow.png" alt="down arrow">
+								</p>
+								<div class="selector year-selector">
+									<ul id="year-selector">
+									</ul>
+								</div>
+								<img onclick="nextYear('year', 1)" src="img/down-arrow.png" alt="down arrow">
+							</div>
+							<div class="month">
+								<img onclick="prevMonth('month', 1)" src="img/down-arrow.png" alt="down arrow">
+								<p onclick="toggleSelector('month-selector', 'month-selector-img')">
+									<span id="month">Октябь</span> 
+									<img id="month-selector-img" src="img/down-arrow.png" alt="down arrow">
+								</p>
+								<div class="selector month-selector">
+									<ul id="month-selector">
+										<li onclick="changeYear(this, 'month', 'month-selector', 'month', 1)">
+											<p>Январь</p>
+										</li>
+										<li onclick="changeYear(this, 'month', 'month-selector', 'month', 1)">
+											<p>Февраль</p>
+										</li>
+										<li onclick="changeYear(this, 'month', 'month-selector', 'month', 1)">
+											<p>Март</p>
+										</li>
+										<li onclick="changeYear(this, 'month', 'month-selector', 'month', 1)">
+											<p>Апрель</p>
+										</li>
+										<li onclick="changeYear(this, 'month', 'month-selector', 'month', 1)">
+											<p>Май</p>
+										</li>
+										<li onclick="changeYear(this, 'month', 'month-selector', 'month', 1)">
+											<p>Июнь</p>
+										</li>
+										<li onclick="changeYear(this, 'month', 'month-selector', 'month', 1)">
+											<p>Июль</p>
+										</li>
+										<li onclick="changeYear(this, 'month', 'month-selector', 'month', 1)">
+											<p>Август</p>
+										</li>
+										<li onclick="changeYear(this, 'month', 'month-selector', 'month', 1)">
+											<p>Сентябрь</p>
+										</li>
+										<li onclick="changeYear(this, 'month', 'month-selector', 'month', 1)">
+											<p>Октябрь</p>
+										</li>
+										<li onclick="changeYear(this, 'month', 'month-selector', 'month', 1)">
+											<p>Ноябрь</p>
+										</li>
+										<li onclick="changeYear(this, 'month', 'month-selector', 'month', 1)">
+											<p>Декабрь</p>
+										</li>
+									</ul>
+								</div>
+								<img onclick="nextMonth('month', 1)" src="img/down-arrow.png" alt="down arrow">
+							</div>
+							<ul class="weekday-names">
+								<li>Пн</li>
+								<li>Вт</li>
+								<li>Ср</li>
+								<li>Чт</li>
+								<li>Пт</li>
+								<li>Сб</li>
+								<li>Вс</li>
+							</ul>
+							<div class="days" id="calendar-days">
+							</div>
+							<button class="calendar-button" onclick="submitDate()">
+								Применить
+							</button>
+						</div>
+						<div class="calendar-m calendar-2">
+							<div class="year">
+								<img  onclick="prevYear('year-2', 2)"  src="img/down-arrow.png" alt="down arrow">
+								<p onclick="toggleSelector('year-2-selector', 'year-2-selector-img')">
+									<span id="year-2">2022</span> 
+									<img id="year-2-selector-img" src="img/down-arrow.png" alt="down arrow">
+								</p>
+								<div class="selector year-selector">
+									<ul id="year-2-selector">
+									</ul>
+								</div>
+								<img onclick="nextYear('year-2', 2)" src="img/down-arrow.png" alt="down arrow">
+							</div>
+							<div class="month">
+								<img onclick="prevMonth('month-2', 2)" src="img/down-arrow.png" alt="down arrow">
+								<p onclick="toggleSelector('month-2-selector', 'month-2-selector-img')">
+									<span id="month-2">Октябь</span> 
+									<img id="month-2-selector-img" src="img/down-arrow.png" alt="down arrow">
+								</p>
+								<div class="selector month-selector">
+									<ul id="month-2-selector">
+										<li onclick="changeYear(this, 'month-2', 'month-2-selector', 'month', 2)">
+											<p>Январь</p>
+										</li>
+										<li onclick="changeYear(this, 'month-2', 'month-2-selector', 'month', 2)">
+											<p>Февраль</p>
+										</li>
+										<li onclick="changeYear(this, 'month-2', 'month-2-selector', 'month', 2)">
+											<p>Март</p>
+										</li>
+										<li onclick="changeYear(this, 'month-2', 'month-2-selector', 'month', 2)">
+											<p>Апрель</p>
+										</li>
+										<li onclick="changeYear(this, 'month-2', 'month-2-selector', 'month', 2)">
+											<p>Май</p>
+										</li>
+										<li onclick="changeYear(this, 'month-2', 'month-2-selector', 'month', 2)">
+											<p>Июнь</p>
+										</li>
+										<li onclick="changeYear(this, 'month-2', 'month-2-selector', 'month', 2)">
+											<p>Июль</p>
+										</li>
+										<li onclick="changeYear(this, 'month-2', 'month-2-selector', 'month', 2)">
+											<p>Август</p>
+										</li>
+										<li onclick="changeYear(this, 'month-2', 'month-2-selector', 'month', 2)">
+											<p>Сентябрь</p>
+										</li>
+										<li onclick="changeYear(this, 'month-2', 'month-2-selector', 'month', 2)">
+											<p>Октябрь</p>
+										</li>
+										<li onclick="changeYear(this, 'month-2', 'month-2-selector', 'month', 2)">
+											<p>Ноябрь</p>
+										</li>
+										<li onclick="changeYear(this, 'month-2', 'month-2-selector', 'month', 2)">
+											<p>Декабрь</p>
+										</li>
+									</ul>
+								</div>
+								<img onclick="nextMonth('month-2', 2)" src="img/down-arrow.png" alt="down arrow">
+							</div>
+							<ul class="weekday-names">
+								<li>Пн</li>
+								<li>Вт</li>
+								<li>Ср</li>
+								<li>Чт</li>
+								<li>Пт</li>
+								<li>Сб</li>
+								<li>Вс</li>
+							</ul>
+							<div class="days" id="calendar-days-2">
+							</div>
+							<button class="calendar-button cancel-button"  onclick="hideCalendars()">
+								Отменить
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Main Site Content Ends -->
+		<script defer src="js/app.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,456 @@
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-BoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-BoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-BlackItalic.woff2") format("woff2"), url("../fonts/Montserrat-BlackItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLightItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Italic.woff2") format("woff2"), url("../fonts/Montserrat-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-MediumItalic.woff2") format("woff2"), url("../fonts/Montserrat-MediumItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-LightItalic.woff2") format("woff2"), url("../fonts/Montserrat-LightItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-SemiBoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Thin.woff2") format("woff2"), url("../fonts/Montserrat-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-ThinItalic.woff2") format("woff2"), url("../fonts/Montserrat-ThinItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  color: #7F7432;
+  border: 0;
+  box-sizing: border-box !important;
+  font-family: Montserrat !important;
+  font-size: 100%;
+  font-weight: 500 !important;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  background-color: rgb(254, 253, 243);
+}
+
+html {
+  font-size: 16px;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none !important;
+  border: none;
+  font-family: Montserrat;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+section.calendar {
+  background-color: #F4F4F4;
+}
+section.calendar .calendar__container {
+  position: relative;
+  padding: 20px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+section.calendar .calendar__container .calendar__inputs {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+section.calendar .calendar__container .calendar__inputs .calendar__input {
+  position: relative;
+}
+section.calendar .calendar__container .calendar__inputs .calendar__input p {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section.calendar .calendar__container .calendar__inputs .calendar__input input {
+  background-color: transparent;
+  border: 1px solid #E8E3C4;
+  font-size: 16px;
+  padding: 16px 10px;
+  padding-left: 40px;
+  color: rgb(225, 225, 225);
+  width: 236px;
+  cursor: pointer !important;
+  box-sizing: border-box;
+  pointer-events: none !important;
+}
+section.calendar .calendar__container .calendar__inputs .calendar__input input span {
+  color: #7F7432;
+}
+section.calendar .calendar__container .calendar__inputs .calendar__input img {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(-100%, -50%) translateX(-11px);
+  width: 20px;
+}
+section.calendar .calendar__container .calendar__inputs .calendar__first-input input {
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+}
+section.calendar .calendar__container .calendar__inputs .calendar__last-input input {
+  border-radius: 0px 4px 4px 0px;
+}
+section.calendar .calendar__container .calendars {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  transform: translateY(25px);
+}
+section.calendar .calendar__container .calendars.active {
+  display: flex;
+}
+section.calendar .calendar__container .calendars .calendar-m {
+  position: relative;
+}
+section.calendar .calendar__container .calendars .calendar-m .year, section.calendar .calendar__container .calendars .calendar-m .month {
+  width: 100%;
+  height: 51px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E8E3C4;
+  border-bottom: none;
+}
+section.calendar .calendar__container .calendars .calendar-m .year > img, section.calendar .calendar__container .calendars .calendar-m .month > img {
+  width: 15px;
+  position: absolute;
+  transition: 0.3s;
+  cursor: pointer;
+}
+section.calendar .calendar__container .calendars .calendar-m .year > img:hover, section.calendar .calendar__container .calendars .calendar-m .month > img:hover {
+  opacity: 0.7;
+}
+section.calendar .calendar__container .calendars .calendar-m .year > img:first-child, section.calendar .calendar__container .calendars .calendar-m .month > img:first-child {
+  left: 11px;
+  transform: rotate(90deg);
+}
+section.calendar .calendar__container .calendars .calendar-m .year > img:last-child, section.calendar .calendar__container .calendars .calendar-m .month > img:last-child {
+  left: 100%;
+  transform: translateX(-100%) translateX(-11px) rotate(-90deg);
+}
+section.calendar .calendar__container .calendars .calendar-m .year p, section.calendar .calendar__container .calendars .calendar-m .month p {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+section.calendar .calendar__container .calendars .calendar-m .year p img, section.calendar .calendar__container .calendars .calendar-m .month p img {
+  position: absolute;
+  left: 100%;
+  transform: translateX(13px);
+  width: 16px !important;
+  max-width: none;
+  transition: 0.3s;
+}
+section.calendar .calendar__container .calendars .calendar-m .year p img.active, section.calendar .calendar__container .calendars .calendar-m .month p img.active {
+  transform: translateX(13px) rotate(180deg);
+}
+section.calendar .calendar__container .calendars .calendar-m .year .selector, section.calendar .calendar__container .calendars .calendar-m .month .selector {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  z-index: 5;
+  transform: translateX(-50%);
+}
+section.calendar .calendar__container .calendars .calendar-m .year .selector ul, section.calendar .calendar__container .calendars .calendar-m .month .selector ul {
+  background-color: #E8E3C4;
+  height: 300px;
+  padding: 0px 0;
+  border: 0px solid #b9b59c;
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+section.calendar .calendar__container .calendars .calendar-m .year .selector ul::-webkit-scrollbar, section.calendar .calendar__container .calendars .calendar-m .month .selector ul::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f1f1f1;
+}
+section.calendar .calendar__container .calendars .calendar-m .year .selector ul::-webkit-scrollbar-thumb, section.calendar .calendar__container .calendars .calendar-m .month .selector ul::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+section.calendar .calendar__container .calendars .calendar-m .year .selector ul::-webkit-scrollbar-thumb:hover, section.calendar .calendar__container .calendars .calendar-m .month .selector ul::-webkit-scrollbar-thumb:hover {
+  background-color: #757575;
+}
+section.calendar .calendar__container .calendars .calendar-m .year .selector ul.active, section.calendar .calendar__container .calendars .calendar-m .month .selector ul.active {
+  overflow-y: scroll;
+  opacity: 1;
+  padding: 5px 0;
+  border: 1px solid #b9b59c;
+  max-height: 270px;
+}
+section.calendar .calendar__container .calendars .calendar-m .year .selector ul li, section.calendar .calendar__container .calendars .calendar-m .month .selector ul li {
+  padding: 5px 12px;
+  width: 80px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+section.calendar .calendar__container .calendars .calendar-m .year .selector ul li p, section.calendar .calendar__container .calendars .calendar-m .month .selector ul li p {
+  justify-content: start;
+  font-size: 19px;
+}
+section.calendar .calendar__container .calendars .calendar-m .year .selector ul li:hover, section.calendar .calendar__container .calendars .calendar-m .month .selector ul li:hover {
+  background-color: #FEDE31;
+}
+section.calendar .calendar__container .calendars .calendar-m .year .selector.month-selector ul li, section.calendar .calendar__container .calendars .calendar-m .month .selector.month-selector ul li {
+  width: 128px;
+}
+section.calendar .calendar__container .calendars .calendar-m .year p img {
+  transform: translateX(4px);
+}
+section.calendar .calendar__container .calendars .calendar-m .weekday-names {
+  display: inline-flex;
+  justify-content: center;
+  border: 1px solid #E8E3C4;
+  border-collapse: collapse;
+}
+section.calendar .calendar__container .calendars .calendar-m .weekday-names li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49.9px;
+  height: 49.9px;
+}
+section.calendar .calendar__container .calendars .calendar-m .days {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 1px;
+  width: 350px;
+  flex-wrap: wrap;
+}
+section.calendar .calendar__container .calendars .calendar-m .days .calendar__item {
+  width: 51px;
+  height: 51px;
+  margin: -1px 0 0 -1px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  border-collapse: collapse;
+  border: 1px solid #E8E3C4;
+  transition: 0.3s;
+}
+section.calendar .calendar__container .calendars .calendar-m .days .calendar__item.active {
+  background-color: rgb(251, 245, 221);
+}
+section.calendar .calendar__container .calendars .calendar-m .days .calendar__item.selected {
+  background-color: #FEDE31;
+  border: 1px solid #b69f22;
+}
+section.calendar .calendar__container .calendars .calendar-m .days .calendar__item.selected:hover {
+  background-color: #edd132;
+  border: 1px solid #a99420;
+}
+section.calendar .calendar__container .calendars .calendar-m .days .calendar__item:hover {
+  background-color: rgb(207, 207, 207);
+}
+section.calendar .calendar__container .calendars .calendar-button {
+  width: 100%;
+  background-color: rgb(255, 75, 0);
+  height: 50px;
+  position: relative;
+  z-index: 3;
+  font-weight: 500 !important;
+  border-top: none;
+  color: white;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s;
+}
+section.calendar .calendar__container .calendars .calendar-button:hover {
+  background-color: rgb(212, 64, 0);
+}
+section.calendar .calendar__container .calendars .calendar-button.cancel-button {
+  border: 3px solid rgb(255, 75, 0);
+  background-color: rgb(251, 245, 221);
+  color: #7F7432;
+}
+section.calendar .calendar__container .calendars .calendar-button.cancel-button:hover {
+  background-color: rgb(212, 64, 0);
+  background-color: rgb(237, 231, 208);
+}
