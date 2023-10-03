@@ -18,7 +18,7 @@ export const russianMonths = [
 let firstDayDivContainer = document.getElementById("calendar-days")
 let secondDayDivContainer = document.getElementById("calendar-days-2")
 
-export default function updateCalendar(dateFrom, dateTo)
+export default function updateCalendar(dateFrom, dateTo, submited = true, submited2 = true)
 {
     let i = 0;
     let day = 1;
@@ -50,7 +50,7 @@ export default function updateCalendar(dateFrom, dateTo)
             secondDayDiv.classList.add("active");
             const dayContent = document.createElement("p")
             dayContent.innerHTML = day;
-            if(day === dateTo.getDate())
+            if(day === dateTo.getDate() && submited)
             {
                 secondDayDiv.classList.add("selected");
             }
@@ -65,7 +65,7 @@ export default function updateCalendar(dateFrom, dateTo)
             firstDayDiv.classList.add("active");
             const dayContent = document.createElement("p");
             dayContent.innerHTML = day1;
-            if(day1 === dateFrom.getDate())
+            if(day1 === dateFrom.getDate() && submited2)
             {
                 firstDayDiv.classList.add("selected");
             }

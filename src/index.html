@@ -16,21 +16,43 @@
 			<section class="calendar">
 				<div class="calendar__container">
 					<div class="calendar__inputs" onclick="showCalendars()">
-						<div class="calendar__first-input calendar__input">
-							<p>От</p>
-							<input id="date-input-1" disabled type="text">
-							<img src="@img/calendar.png" alt="calendar">
-						</div>
-						<div class="calendar__last-input calendar__input">
-							<p>До</p>
-							<input id="date-input-2" disabled type="text">
-							<img src="@img/calendar.png" alt="calendar">
+						<form class="calendar__first-input calendar__input" id="date-input-container-1">
+							<div class="left">
+								<p class="input-title">От</p>
+								<input class="date-input" autocomplete="off" id="date-input-1" type="text" maxlength="10">
+								<img src="@img/calendar.png" alt="calendar">
+							</div>
+							<div class="right" onclick="nullDate(1)">
+								<span></span>
+								<span></span>
+								<div class="notification">
+									<span></span>
+									<p>Очистить поле?</p>
+								</div>
+							</div>
+						</form>
+						<div class="calendar__last-input calendar__input" id="date-input-container-2">
+							<div class="left">
+								<p class="input-title">До</p>
+								<input class="date-input" autocomplete="off" id="date-input-2" type="text">
+								<img src="@img/calendar.png" alt="calendar">
+							</div>
+							<div class="right" onclick="nullDate(2)">
+								<span></span>
+								<span></span>
+								<div class="notification">
+									<span></span>
+									<p>Очистить поле?</p>
+								</div>
+							</div>
 						</div>
 					</div>	
+					<i id="error-message"></i>
+					<i id="error-message-2"></i>
 					<div class="calendars" id="calendars">
 						<div class="calendar-m calendar-1">
 							<div class="year">
-								<img onclick="prevYear('year', 1)" src="img/down-arrow.png" alt="down arrow">
+								<img onclick="prevYear('year', 1)" id="prev-year-button" src="img/down-arrow.png" alt="down arrow">
 								<p onclick="toggleSelector('year-selector', 'year-selector-img')">
 									<span id="year">2022</span> 
 									<img id="year-selector-img" src="img/down-arrow.png" alt="down arrow">
@@ -39,10 +61,10 @@
 									<ul id="year-selector">
 									</ul>
 								</div>
-								<img onclick="nextYear('year', 1)" src="img/down-arrow.png" alt="down arrow">
+								<img onclick="nextYear('year', 1)" id="next-year-button" src="img/down-arrow.png" alt="down arrow">
 							</div>
 							<div class="month">
-								<img onclick="prevMonth('month', 1)" src="img/down-arrow.png" alt="down arrow">
+								<img onclick="prevMonth('month', 1)" id="prev-month-button" src="img/down-arrow.png" alt="down arrow">
 								<p onclick="toggleSelector('month-selector', 'month-selector-img')">
 									<span id="month">Октябь</span> 
 									<img id="month-selector-img" src="img/down-arrow.png" alt="down arrow">
@@ -87,7 +109,7 @@
 										</li>
 									</ul>
 								</div>
-								<img onclick="nextMonth('month', 1)" src="img/down-arrow.png" alt="down arrow">
+								<img onclick="nextMonth('month', 1)" id="next-month-button" src="img/down-arrow.png" alt="down arrow">
 							</div>
 							<ul class="weekday-names">
 								<li>Пн</li>
@@ -106,7 +128,7 @@
 						</div>
 						<div class="calendar-m calendar-2">
 							<div class="year">
-								<img  onclick="prevYear('year-2', 2)"  src="img/down-arrow.png" alt="down arrow">
+								<img  onclick="prevYear('year-2', 2)" id="prev-year-button-2" src="img/down-arrow.png" alt="down arrow">
 								<p onclick="toggleSelector('year-2-selector', 'year-2-selector-img')">
 									<span id="year-2">2022</span> 
 									<img id="year-2-selector-img" src="img/down-arrow.png" alt="down arrow">
@@ -115,10 +137,10 @@
 									<ul id="year-2-selector">
 									</ul>
 								</div>
-								<img onclick="nextYear('year-2', 2)" src="img/down-arrow.png" alt="down arrow">
+								<img onclick="nextYear('year-2', 2)" id="next-year-button-2" src="img/down-arrow.png" class="disabled" alt="down arrow">
 							</div>
 							<div class="month">
-								<img onclick="prevMonth('month-2', 2)" src="img/down-arrow.png" alt="down arrow">
+								<img onclick="prevMonth('month-2', 2)" id="prev-month-button-2" src="img/down-arrow.png" alt="down arrow">
 								<p onclick="toggleSelector('month-2-selector', 'month-2-selector-img')">
 									<span id="month-2">Октябь</span> 
 									<img id="month-2-selector-img" src="img/down-arrow.png" alt="down arrow">
@@ -163,7 +185,7 @@
 										</li>
 									</ul>
 								</div>
-								<img onclick="nextMonth('month-2', 2)" src="img/down-arrow.png" alt="down arrow">
+								<img onclick="nextMonth('month-2', 2)" id="next-month-button-2" src="img/down-arrow.png" alt="down arrow">
 							</div>
 							<ul class="weekday-names">
 								<li>Пн</li>
@@ -178,6 +200,9 @@
 							</div>
 							<button class="calendar-button cancel-button"  onclick="hideCalendars()">
 								Отменить
+							</button>
+							<button class="calendar-button mob" onclick="submitDate()">
+								Применить
 							</button>
 						</div>
 					</div>
